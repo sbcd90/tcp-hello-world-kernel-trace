@@ -1,0 +1,18 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 6/6   #P:1
+#
+#                                _-----=> irqs-off/BH-disabled
+#                               / _----=> need-resched
+#                              | / _---=> hardirq/softirq
+#                              || / _--=> preempt-depth
+#                              ||| / _-=> migrate-disable
+#                              |||| /     delay
+#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION
+#              | |         |   |||||     |         |
+  NetworkManager-285     [000] b..1.  5918.178682: tcp_destroy_sock: family=AF_INET6 sport=0 dport=0 saddr=0.0.0.0 daddr=0.0.0.0 saddrv6=:: daddrv6=2a01:4f9:c010:2636::1 sock_cookie=3
+ tcp_hello_clien-3263    [000] .....  5919.690648: tcp_probe: family=AF_INET src=127.0.0.1:38330 dest=127.0.0.1:8080 mark=0x0 data_len=11 snd_nxt=0xd0fa59a4 snd_una=0xd0fa59a4 snd_cwnd=10 ssthresh=2147483647 snd_wnd=65483 srtt=17 rcv_wnd=65536 sock_cookie=4
+ tcp_hello_clien-3263    [000] .....  5919.690654: tcp_probe: family=AF_INET src=127.0.0.1:38330 dest=127.0.0.1:8080 mark=0x0 data_len=0 snd_nxt=0xd0fa59a4 snd_una=0xd0fa59a4 snd_cwnd=10 ssthresh=2147483647 snd_wnd=65536 srtt=17 rcv_wnd=65536 sock_cookie=4
+ tcp_hello_clien-3263    [000] .....  5919.690757: tcp_rcv_space_adjust: family=AF_INET sport=38330 dport=8080 saddr=127.0.0.1 daddr=127.0.0.1 saddrv6=::ffff:127.0.0.1 daddrv6=::ffff:127.0.0.1 sock_cookie=4
+ tcp_hello_clien-3263    [000] ..s2.  5919.690786: tcp_destroy_sock: family=AF_INET sport=8080 dport=38330 saddr=127.0.0.1 daddr=127.0.0.1 saddrv6=::ffff:127.0.0.1 daddrv6=::ffff:127.0.0.1 sock_cookie=5
+ tcp_hello_clien-3263    [000] .....  5919.690792: tcp_destroy_sock: family=AF_INET sport=38330 dport=8080 saddr=127.0.0.1 daddr=127.0.0.1 saddrv6=::ffff:127.0.0.1 daddrv6=::ffff:127.0.0.1 sock_cookie=4

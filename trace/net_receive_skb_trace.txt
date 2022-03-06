@@ -1,0 +1,20 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 8/8   #P:1
+#
+#                                _-----=> irqs-off/BH-disabled
+#                               / _----=> need-resched
+#                              | / _---=> hardirq/softirq
+#                              || / _--=> preempt-depth
+#                              ||| / _-=> migrate-disable
+#                              |||| /     delay
+#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION
+#              | |         |   |||||     |         |
+ tcp_hello_clien-3209    [000] ..s1.  5523.219745: netif_receive_skb: dev=lo skbaddr=ffff8d360201c0e0 len=60
+ tcp_hello_clien-3209    [000] ..s1.  5523.219754: netif_receive_skb: dev=lo skbaddr=ffff8d36361c0300 len=60
+ tcp_hello_clien-3209    [000] ..s1.  5523.219762: netif_receive_skb: dev=lo skbaddr=ffff8d36361c0700 len=52
+ tcp_hello_serve-2377    [000] ..s1.  5523.219789: netif_receive_skb: dev=lo skbaddr=ffff8d360201c0e0 len=63
+ tcp_hello_serve-2377    [000] ..s1.  5523.219795: netif_receive_skb: dev=lo skbaddr=ffff8d360201c2e0 len=52
+ tcp_hello_clien-3209    [000] ..s1.  5523.219811: netif_receive_skb: dev=lo skbaddr=ffff8d36361c0300 len=52
+ tcp_hello_clien-3209    [000] ..s1.  5523.219877: netif_receive_skb: dev=lo skbaddr=ffff8d360201c0e0 len=52
+ tcp_hello_clien-3209    [000] ..s1.  5523.219886: netif_receive_skb: dev=lo skbaddr=ffff8d36361c0300 len=52
